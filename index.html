@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Creative Boy Sonu</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#0b3d2e;
+  color:#111;
+  padding-bottom:60px; /* footer space */
+}
+
+/* HEADER */
+header{
+  padding:18px;
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+
+/* PAGE SYSTEM */
+.page{ display:none; padding:15px; }
+.active{ display:block; }
+ 
+.back{
+  margin:10px 0;
+  cursor:pointer;
+  font-weight:bold;
+  display:inline-flex;
+  align-items:center;
+}
+
+.back span.arrow{
+  font-size:18px;
+  margin-right:6px;
+}
+
+/* HERO 5:7 */
+.hero{
+  width:100%;
+  aspect-ratio:5/7;
+  overflow:hidden;
+  border-radius:0px;
+  margin-bottom:15px;
+}
+
+.hero video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+.card{ cursor:pointer; }
+
+.card img{
+  width:100%;
+  border-radius:0px;
+}
+
+.card-title{
+  text-align:cventer;
+  margin-top:6px;
+  font-size:18px;
+}
+
+/* MEDIA GRID */
+.media-grid{
+  margin-top:15px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.media{
+  aspect-ratio:3/4;
+  overflow:hidden;
+  border-radius:0px;
+}
+
+.media img,
+.media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.media .card-title{
+  text-align:center;
+  margin-top:5px;
+  font-size:30px;
+}
+
+/* JOIN COMMUNITY */
+.community{
+  margin-top:25px;
+  padding:20px;
+  border-radius:12px;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+
+.community button{
+margin-top:10px;
+  padding:10px 18px;
+  background:#fff;
+  color:#000;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  right:15px;
+  bottom:80px;
+  background:#25D366;
+  color:white;
+  padding:10px 14px;
+  border-radius:40px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:bold;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* FOOTER SOCIALS */
+.footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#111;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  padding:10px 0;
+  font-size:18px;
+}
+.footer a{
+  color:#fff;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>Creative Boy Sonu</header>
+
+<!-- ================= HOME ================= -->
+<div id="home" class="page active">
+
+<div class="hero">
+<video src="dideo/video1.mp4" autoplay muted loop></video>
+</div>
+
+<div class="grid">
+<div class="card" onclick="openPage('original')">
+<img src="image/original1.jpg">
+<div class="card-title">Original Artwork</div>
+</div>
+
+<div class="card" onclick="openPage('spiritual')">
+<img src="image/personalised1.jpg">
+<div class="card-title">personalised Art Gift</div>
+</div>
+
+<div class="card" onclick="openPage('exclusive')">
+<img src="image/exclusive1.jpg">
+<div class="card-title">Exclusive Wall Art</div>
+</div>
+
+<div class="card" onclick="openPage('custom')">
+<img src="image/spiritual1.jpg">
+<div class="card-title">Spiritual Art</div>
+</div>
+
+<div class="card" onclick="openPage('bw')">
+<img src="image/bw1.jpg">
+<div class="card-title">B & W Arts</div>
+</div>
+</div>
+
+<!-- 🔥 JOIN COMMUNITY -->
+<div class="community">
+  <h3>Join Community</h3>
+  <p></p>
+
+  <a href="https://chat.whatsapp.com/LcbGLsg1zyBB5Rg1SM9sdV">Join Now</a>
+</div>
+</div>
+<!-- ================= ORIGINAL ================= -->
+<div id="original" class="page">
+<div class="back" onclick="goHome()"><span class="arrow">⬅</span>Back</div>
+
+<div class="hero">
+<video src="dideo/video2.mp4" autoplay muted loop></video>
+</div>
+
+<div class="media-grid">
+<div class="media">
+  <img src="image/original2.jpg">
+  <div class="card-title">Original Piece 1</div>
+</div>
+<div class="media">
+  <img src="image/original3.jpg">
+  <div class="card-title">Original Piece 2</div>
+</div>
+<div class="media">
+  <img src="image/original4.jpg">
+  <div class="card-title">Original Piece 3</div>
+</div>
+<div class="media">
+  <img src="image/original5.jpg">
+  <div class="card-title">Original Piece 4</div>
+</div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/918003323501">Talk to Artist</a>
+</div>
+
+<!-- ================= SPIRITUAL ================= -->
+<div id="spiritual" class="page">
+<div class="back" onclick="goHome()"><span class="arrow">⬅</span>Back</div>
+
+<div class="hero">
+<video src="dideo/video3.mp4" autoplay muted loop></video>
+</div>
+
+<div class="media-grid">
+<div class="media">
+  <img src="image/personalised2.jpg">
+  <div class="card-title">Spiritual Art 1</div>
+</div>
+<div class="media">
+  <img src="image/personalised3.jpg">
+  <div class="card-title">Spiritual Art 2</div>
+</div>
+<div class="media">
+  <img src="image/personalised4.jpg">
+  <div class="card-title">Spiritual Art 3</div>
+</div>
+<div class="media">
+  <img src="image/personalised5.jpg">
+  <div class="card-title">Spiritual Art 4</div>
+</div>
+</div>
+  
+<a class="whatsapp" href="https://wa.me/918003323501">chek availability</a>
+</div>
+
+<!-- ================= EXCLUSIVE ================= -->
+<div id="exclusive" class="page">
+<div class="back" onclick="goHome()"><span class="arrow">⬅</span>Back</div>
+
+<div class="hero">
+<video src="dideo/video4.mp4" autoplay muted loop></video>
+</div>
+
+<div class="media-grid">
+<div class="media">
+  <img src="image/exclusive2.jpg">
+  <div class="card-title">Exclusive Piece 1</div>
+</div>
+<div class="media">
+  <img src="image/exclusive3.jpg">
+  <div class="card-title">Exclusive Piece 2</div>
+</div>
+<div class="media">
+  <img src="image/exclusive4.jpg">
+  <div class="card-title">Exclusive Piece 3</div>
+</div>
+<div class="media">
+  <img src="image/exclusive5.jpg">
+  <div class="card-title">Exclusive Piece 4</div>
+</div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/918003323501">Discuss Price</a>
+</div>
+
+<!-- ================= CUSTOM ================= -->
+<div id="custom" class="page">
+<div class="back" onclick="goHome()"><span class="arrow">⬅</span>Back</div>
+
+<div class="hero">
+<video src="dideo/video5.mp4" autoplay muted loop></video>
+</div>
+
+<div class="media-grid">
+<div class="media">
+  <img src="image/spiritual2.jpg">
+  <div class="card-title">Custom Art 1</div>
+</div>
+<div class="media">
+  <img src="image/spiritual3.jpg">
+  <div class="card-title">Custom Art 2</div>
+</div>
+<div class="media">
+  <img src="image/spiritual4.jpg">
+  <div class="card-title">Custom Art 3</div>
+</div>
+<div class="media">
+  <img src="image/spiritual5.jpg">
+  <div class="card-title">Custom Art 4</div>
+</div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/918003323501">Talk to Artist</a>
+</div>
+
+<!-- ================= B&W ================= -->
+<div id="bw" class="page">
+<div class="back" onclick="goHome()"><span class="arrow">⬅</span>Back</div>
+
+<div class="hero">
+<video src="dideo/video6.mp4" autoplay muted loop></video>
+</div>
+
+  
+<div class="media-grid">
+<div class="media">
+  <img src="image/bw2.jpg">
+  <div class="card-title">B&W Art 1</div>
+</div>
+<div class="media">
+  <img src="image/bw3.jpg">
+  <div class="card-title">B&W Art 2</div>
+</div>
+<div class="media">
+  <img src="image/bw4.jpg">
+  <div class="card-title">B&W Art 3</div>
+</div>
+<div class="media">
+  <img src="image/bw5.jpg">
+  <div class="card-title">B&W Art 4</div>
+</div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/918003323501">Buy Artwork</a>
+</div>
+
+<!-- ================= FOOTER SOCIALS ================= -->
+<div class="footer">
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+</div>
+
+<script>
+let currentPage = "home";
+
+function openPage(id){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo(0,0);
+  history.pushState({page:id}, "", ""); // push state for back button
+  currentPage = id;
+}
+
+function goHome(){
+  openPage("home");
+}
+
+// Handle phone back button
+window.addEventListener('popstate', function(event){
+  if(event.state && event.state.page){
+    openPage(event.state.page);
+  } else {
+    openPage("home");
+  }
+});
+</script>
+
+</body>
+</html>
